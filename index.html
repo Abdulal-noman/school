@@ -17,6 +17,12 @@
             font-style: normal;
         }
 
+        /* 
+        * {
+            margin: 0;
+            padding: 0;
+        } */
+
         /* color section */
         /* bg-orange */
 
@@ -113,6 +119,11 @@
         .nav {
             align-items: center;
             justify-content: space-around;
+
+        }
+
+        .nav-boder {
+            /* visibility: hidden; */
             border-bottom: 1px solid rgb(254, 163, 1);
         }
 
@@ -149,13 +160,13 @@
             max-width: 1158.61px;
             max-height: 575px;
             margin: 0 auto;
-            border: 1px solid rgb(254, 163, 1);
+            /* border: 1px solid rgb(254, 163, 1); */
             justify-content: space-between;
             align-items: center;
         }
 
         .banner-info {
-            border: 1px solid rgb(254, 163, 1);
+            /* border: 1px solid rgb(254, 163, 1); */
             max-width: 640px;
             max-height: 183px;
         }
@@ -257,45 +268,76 @@
             border-radius: 20px;
         }
 
+
         .story-1 {
             font-weight: 700;
             color: rgb(0, 0, 0);
-            width: 540.27px;
-            height: 630.52px;
+            max-width: 540.27px;
+            max-height: 630.52px;
             grid-area: story-1;
             border-radius: 16px;
             padding: 10px;
             background: rgb(255, 255, 255);
         }
 
+        .story-1-button {
+            border-radius: 47.93px;
+
+            background: rgb(60, 216, 232);
+            border: none;
+            padding: 15px;
+            font-weight: 600;
+            margin-left: 100px;
+            margin-top: -150px;
+        }
+
         .story-2 {
             font-weight: 700;
             color: rgb(0, 0, 0);
-            width: 290.69px;
-            height: 301.61px;
+            max-width: 290.69px;
+            max-height: 301.61px;
             grid-area: story-2;
             border-radius: 16px;
             padding: 10px;
             background: rgb(255, 255, 255);
         }
 
+        .story-2-button {
+            border-radius: 47.93px;
+            font-weight: 500;
+            background: rgb(149, 178, 38);
+            border: none;
+            padding: 10px 20px;
+            margin-left: 50px;
+            margin-top: -150px;
+        }
+
         .story-3 {
             font-weight: 700;
             color: rgb(0, 0, 0);
-            width: 290.69px;
-            height: 301.61px;
+            max-width: 290.69px;
+            max-height: 301.61px;
             grid-area: story-3;
             border-radius: 16px;
             padding: 10px;
             background: rgb(255, 255, 255);
         }
 
+        .story-3-button {
+            border-radius: 47.93px;
+            font-weight: 500;
+            background: rgb(93, 88, 240);
+            border: none;
+            padding: 10px 20px;
+            margin-left: 50px;
+            margin-top: -150px;
+        }
+
         .story-4 {
             font-weight: 700;
             color: rgb(0, 0, 0);
-            width: 290.69px;
-
-            height: 301.61px;
+            max-width: 290.69px;
+            max-height: 301.61px;
             border-radius: 16px;
 
             background: rgb(255, 255, 255);
@@ -303,16 +345,38 @@
             padding: 10px;
         }
 
+        .story-4-button {
+            border-radius: 47.93px;
+            font-weight: 500;
+            background: rgb(149, 178, 38);
+            border: none;
+            padding: 10px 20px;
+            margin-left: 50px;
+            margin-top: -150px;
+        }
+
         .story-5 {
             font-weight: 700;
             color: rgb(0, 0, 0);
-            width: 290.69px;
-            height: 301.61px;
+            max-width: 290.69px;
+            max-height: 301.61px;
             border-radius: 16px;
 
             background: rgb(255, 255, 255);
             grid-area: story-5;
             padding: 10px;
+        }
+
+        .story-5-button {
+            border-radius: 47.93px;
+            font-weight: 500;
+            background: rgb(149, 178, 38);
+            border: none;
+            padding: 10px 20px;
+            margin-left: 50px;
+            margin-top: -150px;
+
+
         }
 
         .story-titel {
@@ -330,8 +394,8 @@
         /* fotter  */
         .footer {
             justify-content: space-around;
-            width: 1070.91px;
-            height: 222px;
+            max-width: 1070.91px;
+            max-height: 222px;
             padding: 123px 140px 174px 228px;
         }
 
@@ -339,12 +403,51 @@
             text-align: center;
             padding: 60px;
         }
+
+        @media screen and (max-width:576px) {
+
+
+            * {
+                margin: 0px auto;
+            }
+
+            /* banner */
+            .banner {
+                flex-direction: column-reverse;
+            }
+
+            .banner-info {
+                font-size: 2em;
+
+                text-align: center;
+                margin: 10px;
+            }
+
+            .skill-container {
+                flex-direction: column;
+            }
+
+            .story-container {
+                grid-template-areas:
+                    "story-4 story-3"
+                    "story-2 story-4"
+                    "story-3 story-4"
+
+
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+
+
+        }
     </style>
 </head>
 
 <body class="quicksand-Quicksand">
     <header>
-        <nav class="nav display-flaex .white">
+        <nav class="nav display-flaex .white ">
             <div class="school-nav display-flaex">
                 <!-- <img class="school-logo" src="../assets/logo.png" alt="logo of the school"> -->
                 <img class="logo display-flaex" src="/assets/logo.png" alt="" />
@@ -436,7 +539,8 @@
             <div class="story-container">
                 <div class="story story-1">
                     <img src="/assets/story-1.png" alt="story-1" />
-                    <h5>A fun toddler coloring training on classroom</h5>
+                    <button class="story-1-button white">November 19,2019</button>
+                    <h2>A fun toddler coloring training on classroom</h2>
                     <p class="story-des">
                         Beautiful branding for changes by Never Now in Australia. changes
                         is a platform for open discussion in an inclusive and
@@ -445,22 +549,26 @@
                 </div>
                 <div class="story story-2">
                     <img src="/assets/story-2.png" alt="story-2" />
+                    <button class="story-2-button white">November 19,2019</button>
                     <h5 class="small-title">
                         Find out if a school fits the family’s needs
                     </h5>
                 </div>
                 <div class="story story-3">
                     <img src="/assets/story-3.png" alt="story-3" />
+                    <button class="story-3-button white">November 19,2019</button>
                     <h5 class="small-title">Summer math & literacy centres for kids</h5>
                 </div>
                 <div class="story story-4">
                     <img src="/assets/story-4.png" alt="story-4" />
+                    <button class="story-4-button white">January 19,2019</button>
                     <h5 class="small-title">
                         Classroom management techniques for new tutors
                     </h5>
                 </div>
                 <div class="story story-5">
                     <img src="/assets/story-5.png" alt="story-5" />
+                    <button class="story-5-button white">July 19,2019</button>
                     <h5 class="small-title">
                         Conversation rhymes improve kids listening
                     </h5>
