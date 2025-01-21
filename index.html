@@ -25,6 +25,13 @@
             background-color: rgb(17, 17, 17);
 
         }
+        /* back-ground our-story section */
+        .bg-our-story{
+          background: url('/assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+        }
+        .bg-footer{
+            background-color: rgb(1, 172, 253);
+        }
 
 
     /* font color */
@@ -102,12 +109,12 @@
     }
 
 
-    .link-li{
+    .link-li,.links{
        
         list-style: none;
         margin: 20px;
     }
-    .links-a,.read-more{
+    .links-a,.read-more,.anchor{
 
        /* font-size: 1.25em; */
         text-decoration: none;
@@ -158,12 +165,14 @@
             justify-content: center;
             margin-top: 60px;
             margin-bottom: 80px;
-
+            align-items: center;
         }
         .skill{
             text-align: center;
             width: 367.8px;
             height: 476.78px;
+            padding: 50px;
+           
 
         }
         .skill-kinder{
@@ -174,6 +183,7 @@
 
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    
             
                     }
         .skill-elementry{
@@ -191,7 +201,30 @@ border-radius: 18.86px;
 
 box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
 background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-        }    
+            /* skill-button  */
+        
+        }  
+        .left-arrow,.right-arrow{
+            width: 60px;
+            height: 60px;
+            border: none;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            font-weight: 700;
+            text-align: center;
+
+        }
+        .button-container{
+            text-align: center;
+        }
+
+        /* our story section  */
+        .story-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        
 
 
 
@@ -253,13 +286,66 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
                     <h3 class="header">Middle (10-16) Years</h3>
                     <p class="skill-des">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mu sdis parturient</p>
                     <a  href="" class="read-more .read-more-middle">Read More</a>
+               
+                  
                 </div>
             </div>
 
+            <div class="button-container">
+                <button class="left-arrow bg-orange white">&lt;</button>
+                <button class="right-arrow bg-orange white">&gt;</button>
+
+            </div>
+           
+
+        </section>
+        <section class="our-story bg-our-story">
+            <h3 class="our-story-titel">Our Stories</h3>
+            <div class="story-container">
+                <div class="story">
+                    <img src="/assets/story-1.png" alt="story-1">
+                    <h5>A fun toddler coloring training on classroom</h5>
+                    <p class="story-des"> Beautiful branding for changes by Never Now in Australia. changes is a platform for open discussion in an inclusive and collaborative environment, providing the...</p>
+                </div>
+               <div class="story">
+                <img src="/assets/story-2.png" alt="story-2">
+                <h5 class="small-title">Find out if a school fits the family’s needs</h5>
+               </div>
+               <div class="story">
+                <img src="/assets/story-3.png" alt="story-3">
+                <h5 class="small-title">Summer math & literacy centres for kids</h5>
+               </div>
+               <div class="story">
+                <img src="/assets/story-4.png" alt="story-4">
+                <h5 class="small-title">Classroom management techniques for new tutors</h5>
+               </div>
+               <div class="story">
+                <img src="/assets/story-5.png" alt="story-5">
+                <h5 class="small-title">Conversation rhymes improve kids listening</h5>
+               </div>
+            </div>
         </section>
 
     </main>
-    <footer>
+    <footer class="bg-footer white">
+        <div class="footer">
+            <div class="footer-school-title">
+
+            </div>
+            <div class="footer-link">
+                <ul class="link-container">
+                    <li class="links"><a href="" class="anchor white">Home</a></li>
+                    <li class="links"><a href="" class="anchor white">About</a></li>
+                    <li class="links"><a href="" class="anchor white">Faclities</a></li>
+                    <li class="links"><a href="" class="anchor white">Admission</a></li>
+                </ul>
+
+            </div>
+            <div class="social-media">
+
+            </div>
+        </div>
+
 
 
     </footer>
