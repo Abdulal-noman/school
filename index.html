@@ -87,11 +87,17 @@
         /* buttom sherded */
         .content-buttom,
         .enroll,
-        .View-All {
+        .View-All,
+        .button-view-all {
             padding: 5px 40px;
             border-radius: 8px;
             border: none;
         }
+
+        /* .white {
+            max-width: 1140px;
+            margin: 0px auto;
+        } */
 
         .bg {
             background-image: url("/assets/bg.png");
@@ -120,14 +126,17 @@
         }
 
         .link-li,
-        .links {
+        .links,
+        .links-anchor,
+        .link {
             list-style: none;
             margin: 20px;
         }
 
         .links-a,
         .read-more,
-        .anchor {
+        .anchor,
+        .links-anchor {
             /* font-size: 1.25em; */
             text-decoration: none;
         }
@@ -235,14 +244,107 @@
         /* our story section  */
         .story-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-areas:
+                "story-1   story-2   story-3"
+                "story-1   story-4   story-5";
+        }
+
+        .story {
+            border-radius: 20px;
+        }
+
+        .story-1 {
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            width: 540.27px;
+            height: 630.52px;
+            grid-area: story-1;
+            border-radius: 16px;
+            padding: 10px;
+            background: rgb(255, 255, 255);
+        }
+
+        .story-2 {
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            width: 290.69px;
+            height: 301.61px;
+            grid-area: story-2;
+            border-radius: 16px;
+            padding: 10px;
+            background: rgb(255, 255, 255);
+        }
+
+        .story-3 {
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            width: 290.69px;
+            height: 301.61px;
+            grid-area: story-3;
+            border-radius: 16px;
+            padding: 10px;
+            background: rgb(255, 255, 255);
+        }
+
+        .story-4 {
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            width: 290.69px;
+
+            height: 301.61px;
+            border-radius: 16px;
+
+            background: rgb(255, 255, 255);
+            grid-area: story-4;
+            padding: 10px;
+        }
+
+        .story-5 {
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            width: 290.69px;
+            height: 301.61px;
+            border-radius: 16px;
+
+            background: rgb(255, 255, 255);
+            grid-area: story-5;
+            padding: 10px;
+        }
+
+        .story-titel {
+
+            text-align: center;
+        }
+
+        .story-titel-titel {
+            font-size: 3em;
+            font-weight: 700;
+        }
+
+
+
+        /* fotter  */
+        .footer {
+            justify-content: space-around;
+            width: 1070.91px;
+            height: 222px;
+            padding: 123px 140px 174px 228px;
+        }
+
+        .button-view {
+            text-align: center;
+            padding: 60px;
         }
     </style>
 </head>
 
 <body class="quicksand-Quicksand">
     <header>
-        <nav class="nav display-flaex">
+        <nav class="nav display-flaex .white">
             <div class="school-nav display-flaex">
                 <!-- <img class="school-logo" src="../assets/logo.png" alt="logo of the school"> -->
                 <img class="logo display-flaex" src="/assets/logo.png" alt="" />
@@ -284,6 +386,7 @@
                 <img src="/assets/hero-kids.png" alt="" />
             </div>
         </div>
+
     </header>
     <main>
         <section class="bg">
@@ -325,10 +428,13 @@
                 <button class="right-arrow bg-orange white">&gt;</button>
             </div>
         </section>
-        <section class="our-story bg-our-story">
-            <h3 class="our-story-titel">Our Stories</h3>
+        <section class="our-story bg-our-story white">
+            <div class="our-story-title">
+                <h3 class="our-story-title-title">Our Stories</h3>
+            </div>
+
             <div class="story-container">
-                <div class="story">
+                <div class="story story-1">
                     <img src="/assets/story-1.png" alt="story-1" />
                     <h5>A fun toddler coloring training on classroom</h5>
                     <p class="story-des">
@@ -337,43 +443,67 @@
                         collaborative environment, providing the...
                     </p>
                 </div>
-                <div class="story">
+                <div class="story story-2">
                     <img src="/assets/story-2.png" alt="story-2" />
                     <h5 class="small-title">
                         Find out if a school fits the family’s needs
                     </h5>
                 </div>
-                <div class="story">
+                <div class="story story-3">
                     <img src="/assets/story-3.png" alt="story-3" />
                     <h5 class="small-title">Summer math & literacy centres for kids</h5>
                 </div>
-                <div class="story">
+                <div class="story story-4">
                     <img src="/assets/story-4.png" alt="story-4" />
                     <h5 class="small-title">
                         Classroom management techniques for new tutors
                     </h5>
                 </div>
-                <div class="story">
+                <div class="story story-5">
                     <img src="/assets/story-5.png" alt="story-5" />
                     <h5 class="small-title">
                         Conversation rhymes improve kids listening
                     </h5>
                 </div>
             </div>
+            <div class="button-view"><button class="white bg-black button-view-all">View All</button></div>
         </section>
     </main>
     <footer class="bg-footer white">
-        <div class="footer">
-            <div class="footer-school-title"></div>
+        <div class="footer display-flaex">
+            <div class="footer-school-title">
+                <div class="logo-title display-flaex">
+                    <img src="/assets/logo.png" alt="logo.png">
+                    <h3 class="fotter-title">Kids Education</h3>
+
+                </div>
+                <div class="fotter-paragraph">
+                    <p>Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple
+                        Aussie. Mayo rib sauce Hawaiian meatball.</p>
+                </div>
+            </div>
             <div class="footer-link">
+                <h5>About School</h5>
                 <ul class="link-container">
-                    <li class="links"><a href="" class="anchor white">Home</a></li>
-                    <li class="links"><a href="" class="anchor white">About</a></li>
-                    <li class="links"><a href="" class="anchor white">Faclities</a></li>
-                    <li class="links"><a href="" class="anchor white">Admission</a></li>
+                    <li class="links"><a href="#" class="anchor white">Home</a></li>
+                    <li class="links"><a href="#" class="anchor white">About</a></li>
+                    <li class="links"><a href="#" class="anchor white">Faclities</a></li>
+                    <li class="links"><a href="#" class="anchor white">Admission</a></li>
                 </ul>
             </div>
-            <div class="social-media"></div>
+            <div class="social-media">
+                <div class="deep-in-touch"> Keep In Touch</div>
+                <div class="link-social-media ">
+                    <ul class="link display-flaex">
+                        <li><a href="#" class="links-anchor"><img src="/assets/fb.png" alt="facebook"></a></li>
+                        <li><a href="#" class="links-anchor"><img src="/assets/dribble.png" alt="drubble.png"></a></li>
+                        <li><a href="#" class="links-anchor"><img src="/assets/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#" class="links-anchor"><img src="/assets/google+.png" alt="gogle.png    "></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </footer>
 </body>
