@@ -1,210 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>School-progect</title>
     <style>
         /* font-name */
 
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
         .quicksand-Quicksand {
-         font-family: "Quicksand", serif;
-         font-optical-sizing: auto;
-         font-weight: 400;
-         font-style: normal;
+            font-family: "Quicksand", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
         }
-    /* color section */
-    /* bg-orange */
 
-        .bg-orange{
+        /* color section */
+        /* bg-orange */
+
+        .bg-orange {
             background-color: rgb(254, 163, 1);
         }
-        .bg-black{
-            background-color: rgb(17, 17, 17);
 
+        .bg-black {
+            background-color: rgb(17, 17, 17);
         }
+
         /* back-ground our-story section */
-        .bg-our-story{
-          background: url('/assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+        .bg-our-story {
+            background: url("/assets/bg.png"),
+                linear-gradient(0deg,
+                    rgba(254, 163, 1, 0.3),
+                    rgba(255, 255, 255, 0.3) 100%);
         }
-        .bg-footer{
+
+        .bg-footer {
             background-color: rgb(1, 172, 253);
         }
 
-
-    /* font color */
-    .orange{
-       color: rgb(254, 163, 1);
-    }
-    .black{
-        color: rgb(17, 17, 17);
-    }
-    .blue{
-        color:rgb(1, 172, 253);
-    }
-    .light-aqua{
-        color: rgb(5, 212, 223);
-    }
-    .aqua-blue{
-        color: rgb(93, 88, 239);
-    }
-    .deep-black{
-        color: rgb(0, 0, 0);
-    }
-    .white{
-        color: rgb(255, 255, 255);
-    }
-    .read-more-middle{
-        color: rgb(135, 0, 255);
-
-    }
-    /* font size */
-    .nav-font{
-        font-size: 1.25em;
-    }
-
-
-
-
-
-    /* sharded all */
-
-    .display-flaex{
-        display: flex;
-    }
-
-     /* buttom sherded */
-     .content-buttom ,.enroll,.View-All{
-        padding: 5px 40px;
-        border-radius: 8px;
-        border: none;
-    }
-    .bg{
-        background-image: url('/assets/bg.png');
-    }
-
-
-
-
-
-
-    /* navbar */
-    .logo{
-       height: 30px;
-       width: 30px;
-       align-items: center;
-
-    }
-
-    .nav{
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: 1px solid rgb(254, 163, 1);
-    }
-    .school-name{
-        font-size: 2em;
-        font-weight: 700;
-    }
-
-
-    .link-li,.links{
-       
-        list-style: none;
-        margin: 20px;
-    }
-    .links-a,.read-more,.anchor{
-
-       /* font-size: 1.25em; */
-        text-decoration: none;
-        
-    }
-   
-
-
-    /* banner */
-    
-    .banner{
-        /* max-width: 1158.61px;
-       max-height: 575px; */
-       max-width: 1158.61px;
-       max-height: 575px;
-       margin: 0 auto;
-       border: 1px solid rgb(254, 163, 1);
-       justify-content: space-between;
-       align-items: center;
-
+        /* font color */
+        .orange {
+            color: rgb(254, 163, 1);
         }
-    .banner-info{
-        border: 1px solid rgb(254, 163, 1);
-        max-width: 640px;
-        max-height: 183px;
-        }  
-        .title-clolor{
+
+        .black {
+            color: rgb(17, 17, 17);
+        }
+
+        .blue {
+            color: rgb(1, 172, 253);
+        }
+
+        .light-aqua {
+            color: rgb(5, 212, 223);
+        }
+
+        .aqua-blue {
+            color: rgb(93, 88, 239);
+        }
+
+        .deep-black {
+            color: rgb(0, 0, 0);
+        }
+
+        .white {
+            color: rgb(255, 255, 255);
+        }
+
+        .read-more-middle {
+            color: rgb(135, 0, 255);
+        }
+
+        /* font size */
+        .nav-font {
+            font-size: 1.25em;
+        }
+
+        /* sharded all */
+
+        .display-flaex {
+            display: flex;
+        }
+
+        /* buttom sherded */
+        .content-buttom,
+        .enroll,
+        .View-All {
+            padding: 5px 40px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .bg {
+            background-image: url("/assets/bg.png");
+        }
+
+        /* navbar */
+        .logo {
+            height: 30px;
+            width: 30px;
+            align-items: center;
+        }
+
+        .nav {
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 1px solid rgb(254, 163, 1);
+        }
+
+        .school-nav {
+            display: flex;
+        }
+
+        .school-name {
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .link-li,
+        .links {
+            list-style: none;
+            margin: 20px;
+        }
+
+        .links-a,
+        .read-more,
+        .anchor {
+            /* font-size: 1.25em; */
+            text-decoration: none;
+        }
+
+        /* banner */
+
+        .banner {
+            /* max-width: 1158.61px;
+       max-height: 575px; */
+            max-width: 1158.61px;
+            max-height: 575px;
+            margin: 0 auto;
+            border: 1px solid rgb(254, 163, 1);
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .banner-info {
+            border: 1px solid rgb(254, 163, 1);
+            max-width: 640px;
+            max-height: 183px;
+        }
+
+        .title-clolor {
             font-size: 3.25em;
             font-weight: 700;
-        }  
-
-
-
-
+        }
 
         /* currayculam */
 
-
-        .titel-titel{
+        .titel-titel {
             font-size: 3em;
             font-weight: 700;
             text-align: center;
-
         }
 
-        .skill-container{
+        .skill-container {
             gap: 30px;
             justify-content: center;
             margin-top: 60px;
             margin-bottom: 80px;
             align-items: center;
         }
-        .skill{
+
+        .skill {
             text-align: center;
             width: 367.8px;
             height: 476.78px;
             padding: 50px;
-           
-
         }
-        .skill-kinder{
-           
-            box-sizing: border-box;
-    border: 0.94px solid rgb(222, 245, 255);
-    border-radius: 18.86px;
 
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-    
-            
-                    }
-        .skill-elementry{
+        .skill-kinder {
             box-sizing: border-box;
-border: 0.94px solid rgb(255, 244, 220);
-border-radius: 18.86px;
+            border: 0.94px solid rgb(222, 245, 255);
+            border-radius: 18.86px;
 
-box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+            box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+            background: linear-gradient(180deg,
+                    rgb(222, 245, 255),
+                    rgba(255, 255, 255, 0) 40%),
+                rgb(255, 255, 255);
         }
-        .skill-middle{
-            box-sizing: border-box;
-border: 0.94px solid rgb(242, 232, 255);
-border-radius: 18.86px;
 
-box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+        .skill-elementry {
+            box-sizing: border-box;
+            border: 0.94px solid rgb(255, 244, 220);
+            border-radius: 18.86px;
+
+            box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+            background: linear-gradient(180deg,
+                    rgb(255, 244, 220),
+                    rgba(255, 255, 255, 0) 40%),
+                rgb(255, 255, 255);
+        }
+
+        .skill-middle {
+            box-sizing: border-box;
+            border: 0.94px solid rgb(242, 232, 255);
+            border-radius: 18.86px;
+
+            box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+            background: linear-gradient(180deg,
+                    rgb(238, 225, 255),
+                    rgba(255, 255, 255, 0) 40%),
+                rgb(255, 255, 255);
             /* skill-button  */
-        
-        }  
-        .left-arrow,.right-arrow{
+        }
+
+        .left-arrow,
+        .right-arrow {
             width: 60px;
             height: 60px;
             border: none;
@@ -213,55 +226,64 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
             font-size: 1.5em;
             font-weight: 700;
             text-align: center;
-
         }
-        .button-container{
+
+        .button-container {
             text-align: center;
         }
 
         /* our story section  */
-        .story-container{
+        .story-container {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
-        
-
-
-
     </style>
 </head>
+
 <body class="quicksand-Quicksand">
     <header>
         <nav class="nav display-flaex">
             <div class="school-nav display-flaex">
                 <!-- <img class="school-logo" src="../assets/logo.png" alt="logo of the school"> -->
-                 <img class="logo" src="/assets/logo.png" alt="">
+                <img class="logo display-flaex" src="/assets/logo.png" alt="" />
                 <h3 class="school-name">SCHOOL</h3>
-
             </div>
             <div class="link nav-font">
                 <ul class="link-container display-flaex">
-                    <li class="link-li"> <a  class="links-a orange"  href=""> Home </a></li>
-                    <li class="link-li"> <a  class="links-a blue" href=""> About </a></li>
-                    <li class="link-li"> <a  class="links-a light-aqua" href=""> Faclities </a></li>
-                    <li class="link-li"> <a  class="links-a aqua-blue" href=""> Admission </a></li>
+                    <li class="link-li">
+                        <a class="links-a orange" href=""> Home </a>
+                    </li>
+                    <li class="link-li"><a class="links-a blue" href=""> About </a></li>
+                    <li class="link-li">
+                        <a class="links-a light-aqua" href=""> Faclities </a>
+                    </li>
+                    <li class="link-li">
+                        <a class="links-a aqua-blue" href=""> Admission </a>
+                    </li>
                 </ul>
-              
             </div>
-            <div class="Contact "><button class="content-buttom white bg-orange nav-font">Contact</button></div>
-
+            <div class="Contact">
+                <button class="content-buttom white bg-orange nav-font">
+                    Contact
+                </button>
+            </div>
         </nav>
         <div class="banner display-flaex">
             <div class="banner-info">
-                <h2 class="title-clolor"> <span class="orange">Empowering</span><br> students from small age <span class=" blue">towards vision</span></h2>
-                <p class="titel-des">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+                <h2 class="title-clolor">
+                    <span class="orange">Empowering</span><br />
+                    students from small age <span class="blue">towards vision</span>
+                </h2>
+                <p class="titel-des">
+                    With the courage, Confidence, Creativity and Compassion to make
+                    their Unique Contribution in a Diverse and Dynamic World.
+                </p>
                 <buttom class="enroll bg-black white">Enroll Now</buttom>
             </div>
             <div class="banner-image">
-                <img src="/assets/hero-kids.png" alt="">
+                <img src="/assets/hero-kids.png" alt="" />
             </div>
         </div>
-
     </header>
     <main>
         <section class="bg">
@@ -270,68 +292,79 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
             </div>
             <div class="skill-container display-flaex">
                 <div class="skill skill-kinder">
-                    <img src="/assets/kinder.png" alt="kinder.png">
+                    <img src="/assets/kinder.png" alt="kinder.png" />
                     <h3 class="header">Standard Curriculum</h3>
-                    <p class="skill-des">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mu sdis parturient</p>
+                    <p class="skill-des">
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mu sdis parturient
+                    </p>
                     <a href="" class="read-more aqua-blue">Read More</a>
                 </div>
                 <div class="skill skill-elementry">
-                    <img src="/assets/elementary.png" alt="elementary.png">
+                    <img src="/assets/elementary.png" alt="elementary.png" />
                     <h3 class="header">Elementary School</h3>
-                    <p class="skill-des">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mu sdis parturient</p>
+                    <p class="skill-des">
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mu sdis parturient
+                    </p>
                     <a href="" class="read-more orange">Read More</a>
                 </div>
                 <div class="skill skill-middle">
-                    <img src="/assets/middle.png" alt="middle">
+                    <img src="/assets/middle.png" alt="middle" />
                     <h3 class="header">Middle (10-16) Years</h3>
-                    <p class="skill-des">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mu sdis parturient</p>
-                    <a  href="" class="read-more .read-more-middle">Read More</a>
-               
-                  
+                    <p class="skill-des">
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mu sdis parturient
+                    </p>
+                    <a href="" class="read-more .read-more-middle">Read More</a>
                 </div>
             </div>
 
             <div class="button-container">
                 <button class="left-arrow bg-orange white">&lt;</button>
                 <button class="right-arrow bg-orange white">&gt;</button>
-
             </div>
-           
-
         </section>
         <section class="our-story bg-our-story">
             <h3 class="our-story-titel">Our Stories</h3>
             <div class="story-container">
                 <div class="story">
-                    <img src="/assets/story-1.png" alt="story-1">
+                    <img src="/assets/story-1.png" alt="story-1" />
                     <h5>A fun toddler coloring training on classroom</h5>
-                    <p class="story-des"> Beautiful branding for changes by Never Now in Australia. changes is a platform for open discussion in an inclusive and collaborative environment, providing the...</p>
+                    <p class="story-des">
+                        Beautiful branding for changes by Never Now in Australia. changes
+                        is a platform for open discussion in an inclusive and
+                        collaborative environment, providing the...
+                    </p>
                 </div>
-               <div class="story">
-                <img src="/assets/story-2.png" alt="story-2">
-                <h5 class="small-title">Find out if a school fits the family’s needs</h5>
-               </div>
-               <div class="story">
-                <img src="/assets/story-3.png" alt="story-3">
-                <h5 class="small-title">Summer math & literacy centres for kids</h5>
-               </div>
-               <div class="story">
-                <img src="/assets/story-4.png" alt="story-4">
-                <h5 class="small-title">Classroom management techniques for new tutors</h5>
-               </div>
-               <div class="story">
-                <img src="/assets/story-5.png" alt="story-5">
-                <h5 class="small-title">Conversation rhymes improve kids listening</h5>
-               </div>
+                <div class="story">
+                    <img src="/assets/story-2.png" alt="story-2" />
+                    <h5 class="small-title">
+                        Find out if a school fits the family’s needs
+                    </h5>
+                </div>
+                <div class="story">
+                    <img src="/assets/story-3.png" alt="story-3" />
+                    <h5 class="small-title">Summer math & literacy centres for kids</h5>
+                </div>
+                <div class="story">
+                    <img src="/assets/story-4.png" alt="story-4" />
+                    <h5 class="small-title">
+                        Classroom management techniques for new tutors
+                    </h5>
+                </div>
+                <div class="story">
+                    <img src="/assets/story-5.png" alt="story-5" />
+                    <h5 class="small-title">
+                        Conversation rhymes improve kids listening
+                    </h5>
+                </div>
             </div>
         </section>
-
     </main>
     <footer class="bg-footer white">
         <div class="footer">
-            <div class="footer-school-title">
-
-            </div>
+            <div class="footer-school-title"></div>
             <div class="footer-link">
                 <ul class="link-container">
                     <li class="links"><a href="" class="anchor white">Home</a></li>
@@ -339,15 +372,10 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
                     <li class="links"><a href="" class="anchor white">Faclities</a></li>
                     <li class="links"><a href="" class="anchor white">Admission</a></li>
                 </ul>
-
             </div>
-            <div class="social-media">
-
-            </div>
+            <div class="social-media"></div>
         </div>
-
-
-
     </footer>
 </body>
+
 </html>
